@@ -8,10 +8,8 @@
 
 <?php echo "Hello World!"; ?>
 <?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?>
-<?php echo "This site is "; ?> 
-<?php echo $_ENV["COLOR"]; ?> <br /><br />
 
-?>
+<?php if($_ENV["COLOR"]) {?><h3>This site has color: <?php echo $_ENV["COLOR"]; ?>
 
 </body>
 </html>
